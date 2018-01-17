@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.ep {
+    width: 50%;
+    height: 300px;
+    float: left;
+}

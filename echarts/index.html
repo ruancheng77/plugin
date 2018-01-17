@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plugin-Echarts Demo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="ep">
+        <div id="echarts.DEMO_1"></div>
+    </div>
+    <div class="ep">
+        <div id="echarts.DEMO_2"></div>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+
+    <script src="plugin/echarts/ep.js"></script>
+
+    <script>
+        // 方法1:
+        EP.run([
+            'echarts.DEMO_1',
+            'echarts.DEMO_2'
+        ]);
+        // 方法2:
+        // EP.init('echarts.DEMO_1');
+        // EP.init('echarts.DEMO_2');
+    </script>
+</body>
+
+</html>
