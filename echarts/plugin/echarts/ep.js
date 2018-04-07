@@ -208,12 +208,9 @@
 			this.initResizeEvent(module);
 		};
 		ep.event.initResizeEvent = function(module) {
-			var chart = module.chart;
-			setTimeout(() => {
-				window.onresize = function () {
-					chart.resize();
-				}
-			}, 200);
+			$(window).resize(function () {
+				module.chart.resize();
+			});
 			ep.logger("Module [{0}] >>> It's [resize] event is inited.".format([module.module]));
 		};
 		ep.__calDomSize = function (dom) {
